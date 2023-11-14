@@ -123,14 +123,14 @@ const saveLocation = () => {
 };
 
 const setUnitPref = () => {
-  const unitIcon = document.getElementById('.fa-chart-bar');
+  const unitIcon = document.querySelector('.fa-chart-bar');
   addSpinner(unitIcon);
   currentLoc.toggleUnit();
   updateDataAndDisplay(currentLoc);
 };
 
 const refreshWeather = () => {
-  const refreshIcon = document.getElementById('.fa-sync-alt');
+  const refreshIcon = document.querySelector('.fa-sync-alt');
   addSpinner(refreshIcon);
   updateDataAndDisplay(currentLoc);
 };
